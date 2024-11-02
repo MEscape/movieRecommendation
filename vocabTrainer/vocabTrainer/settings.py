@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 import os
 from dotenv import load_dotenv
+import colorlog
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -47,6 +48,8 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "authentication",
     "dictionary",
+    "drf_yasg",
+    "collection"
 ]
 
 MIDDLEWARE = [
@@ -69,6 +72,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'EXCEPTION_HANDLER': 'vocabTrainer.exceptions.custom_exception_handler',
+    'DEFAULT_PAGINATION_CLASS': 'vocabTrainer.pagination.DefaultPagination',
+    'PAGE_SIZE': 10,
 }
 
 SIMPLE_JWT = {
@@ -83,6 +88,7 @@ SIMPLE_JWT = {
     'USER_ID_CLAIM': 'user_id',
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_USER_ID_FIELD': 'id',
+    'TOKEN_OBTAIN_SERIALIZER': 'authentication.jwt.CustomTokenObtainPairSerializer'
 }
 
 ROOT_URLCONF = "vocabTrainer.urls"
@@ -120,6 +126,46 @@ DATABASES = {
     }
 }
 
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "colored": {
+            "()": "colorlog.ColoredFormatter",
+            "format": "%(log_color)s%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+            "datefmt": "%Y-%m-%d %H:%M:%S",
+        },
+        "standard": {
+            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        },
+    },
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "colored",
+            "filters": [],
+        },
+        "file": {
+            "level": "WARNING",
+            "class": "logging.FileHandler",
+            "formatter": "standard",
+            "filename": "app.log",
+            "encoding": "utf-8",
+        },
+    },
+    "loggers": {
+        logger_name: {
+            "level": "WARNING",
+            "propagate": True,
+            "handlers": ["file"],
+        } for logger_name in ("django", "django.request", "django.db.backends", "django.template", "core")
+    },
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["console", "file"],
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

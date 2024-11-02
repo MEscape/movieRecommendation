@@ -16,9 +16,6 @@ class CustomUser(AbstractUser):
         if self.role == 'admin':
             self.is_staff = True
 
-        if self.is_staff:
-            self.role = 'admin'
-
         super().save(*args, **kwargs)
 
     def __str__(self):

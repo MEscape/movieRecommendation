@@ -1,7 +1,12 @@
 from django.urls import path
-from .views import DictionaryView, DictionaryDetailView
+from .views import (
+    DictionaryEntryView,
+    WordCombinationView,
+    WordCombinationDetailView
+)
 
 urlpatterns = [
-    path('', DictionaryView.as_view(), name='dictionary'),
-    path('<int:pk>/', DictionaryDetailView.as_view(), name='dictionary_detail'),
+    path('', DictionaryEntryView.as_view(), name='dictionary_entry'),
+    path('combinations/', WordCombinationView.as_view(), name='word_combination'),
+    path('combinations/<int:pk>/', WordCombinationDetailView.as_view(), name='word_combination_detail'),
 ]

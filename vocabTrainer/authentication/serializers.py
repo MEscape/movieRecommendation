@@ -1,75 +1,118 @@
-from django.contrib.auth import get_user_model
+from django.contrib.auth import get_user_model, authenticate
 from rest_framework import serializers
-from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from rest_framework_simplejwt.serializers import TokenRefreshSerializer
-from rest_framework_simplejwt.tokens import RefreshToken
+from .exceptions import EmailAlreadyExistsException, UsernameAlreadyExistsException, UserNotFoundException, InactiveUserException
+from .jwt import CustomTokenObtainPairSerializer
 
 User = get_user_model()
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'username', 'email', 'password']
-        extra_kwargs = {
-            'password': {'write_only': True},
-            'email': {'required': True}
+class TokenMixin:
+    @staticmethod
+    def get_tokens_for_user(user):
+        """
+        Generate access and refresh tokens for the given user.
+
+        Args:
+            user (User): The user instance for which to generate tokens.
+
+        Returns:
+            dict: A dictionary containing the access and refresh tokens.
+        """
+        serializer = CustomTokenObtainPairSerializer()
+        refresh = serializer.get_token(user)
+        return {
+            'access': str(refresh.access_token),
+            'refresh': str(refresh),
         }
 
-    def create(self, validated_data):
-        user = User(**validated_data)
-        user.set_password(validated_data['password'])
-        user.save()
-        return user
+class RegisterSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, style={'input_type': 'password'})
+    password_verify = serializers.CharField(write_only=True, style={'input_type': 'password'})
+    role = serializers.ChoiceField(choices=User.ROLE_CHOICES, required=False)
 
-class AdminUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'password', 'role']
+        fields = ('username', 'email', 'password', 'password_verify', 'role')
         extra_kwargs = {
-            'password': {'write_only': True},
-            'email': {'required': True}
+            'password': {'write_only': True, 'style': {'input_type': 'password'}},
+            'password_verify': {'write_only': True, 'style': {'input_type': 'password'}},
         }
 
-    def create(self, validated_data):
-        user = User(**validated_data)
-        user.set_password(validated_data['password'])
-        user.save()
-        return user
+    def validate(self, data):
+        """
+        Validate the registration data.
 
-class LoginSerializer(serializers.Serializer):
-    username_or_email = serializers.CharField(required=True, label="Username or Email")
-    password = serializers.CharField(required=True, style={'input_type': 'password'})
+        Args:
+            data (dict): The data to validate.
 
-    class Meta:
-        fields = ['username_or_email', 'password']
+        Returns:
+            dict: The validated data.
 
-class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
-    @classmethod
-    def get_token(cls, user):
-        token = super().get_token(user)
+        Raises:
+            serializers.ValidationError: If passwords do not match, email or username already exists.
+        """
+        request = self.context.get('request')
 
-        # Add custom claims
-        token['username'] = user.username
-        token['email'] = user.email
+        if data.get('password') != data.get('password_verify'):
+            raise serializers.ValidationError({"password": "Passwords must match."})
 
-        return token
+        if request and not request.user.is_staff:
+            data.pop('role', None)
 
-class CustomTokenRefreshSerializer(TokenRefreshSerializer):
-    def validate(self, attrs):
-        data = super().validate(attrs)
-
-        # Get the user from the refresh token
-        user = self.get_user_from_refresh_token(attrs['refresh'])
-        if user:
-            # Add custom claims
-            data['username'] = user.username
-            data['email'] = user.email
+        if User.objects.filter(email=data.get('email')).exists():
+            raise EmailAlreadyExistsException()
+        if User.objects.filter(username=data.get('username')).exists():
+            raise UsernameAlreadyExistsException()
 
         return data
 
-    def get_user_from_refresh_token(self, refresh):
-        try:
-            token = RefreshToken(refresh)
-            return token['user']  # This gets the user ID
-        except Exception:
-            return None
+    def create(self, validated_data):
+        """
+        Create a new user with the validated data.
+
+        Args:
+            validated_data (dict): The validated data for the new user.
+
+        Returns:
+            dict: The tokens for the newly created user.
+        """
+        validated_data.pop('password_verify', None)
+        user = User.objects.create_user(**validated_data)
+        tokens = TokenMixin.get_tokens_for_user(user)
+        return tokens
+
+
+class LoginSerializer(serializers.Serializer):
+    username_or_email = serializers.CharField()
+    password = serializers.CharField(write_only=True, style={'input_type': 'password'})
+
+    def validate(self, data):
+        """
+        Validate login credentials and authenticate the user.
+
+        Args:
+            data (dict): The data containing username/email and password.
+
+        Returns:
+            dict: The tokens for the authenticated user.
+
+        Raises:
+            UserNotFoundException: If the user cannot be found or is inactive.
+        """
+        username_or_email = data.get('username_or_email')
+        password = data.get('password')
+
+        user = authenticate(username=username_or_email, password=password)
+        if not user:
+            try:
+                user_obj = User.objects.get(email=username_or_email)
+                user = authenticate(username=user_obj.username, password=password)
+            except User.DoesNotExist:
+                raise UserNotFoundException()
+
+        if not user:
+            raise UserNotFoundException()
+        if not user.is_active:
+            raise InactiveUserException()
+
+        tokens = TokenMixin.get_tokens_for_user(user)
+        return tokens

@@ -20,6 +20,7 @@ from django.urls import path, include
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
+from .views import SecureImageView
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -36,7 +37,9 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema_swagger_ui'),
+    path('images/<path:image_path>/', SecureImageView.as_view(), name='secure_image'),
     path('api/auth/', include('authentication.urls')),
     path('api/dictionary/', include('dictionary.urls')),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema_swagger_ui')
+    path("api/collections/", include("collection.urls")),
 ]

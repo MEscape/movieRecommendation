@@ -9,13 +9,16 @@ class WordCombinationFormatException(APIException):
             detail = "Wort-Kombination hat eine falsche Struktur."
         super().__init__(detail=detail)
 
-class WordCombinationExistsException(APIException):
-    status_code = 400
-    default_code = "word_combination_exists"
+class WordCombinationAlreadyExistsException(APIException):
+    status_code = 409
+    default_detail = "This word combination already exists in the collection."
+    default_code = "word_combination_already_exists"
 
-    def __init__(self, detail=None):
-        if detail is None:
-            detail = "Die Wort-Kombination existiert bereits."
+    def __init__(self, combination_id=None):
+        if combination_id:
+            detail = f"Combination with ID {combination_id} already exists in the collection."
+        else:
+            detail = self.default_detail
         super().__init__(detail=detail)
 
 class WordCombinationNotFoundException(APIException):
@@ -33,5 +36,5 @@ class WordCombinationIntegrityException(APIException):
 
     def __init__(self, detail=None):
         if detail is None:
-            detail = "Ein Integritätsfehler ist aufgetreten. Die Wort-Kombination konnte nicht gelöscht oder aktualisiert werden."
+            detail = "Ein Integritätsfehler ist aufgetreten."
         super().__init__(detail=detail)

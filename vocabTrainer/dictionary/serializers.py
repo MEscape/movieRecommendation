@@ -1,8 +1,8 @@
 from django.db import IntegrityError, transaction
+from django.db.models import Q
 from rest_framework import serializers
 
-from .exceptions import WordCombinationFormatException, WordCombinationExistsException, \
-    WordCombinationIntegrityException
+from .exceptions import WordCombinationFormatException, WordCombinationIntegrityException, WordCombinationAlreadyExistsException
 from .models import DictionaryEntry, WordCombination
 
 class DictionaryEntrySerializer(serializers.ModelSerializer):
@@ -19,7 +19,7 @@ def _cleanup_dictionary_entry(old_entry, related_name):
         old_entry.delete()
 
 
-def _get_or_create_dictionary_entry(validated_data):
+def _get_or_create_dictionary_entry(validated_data, ignoreExisting=False):
     """
     Get or create dictionary entries for the words provided in validated data.
 
@@ -43,7 +43,16 @@ def _get_or_create_dictionary_entry(validated_data):
     word1_entry, _ = DictionaryEntry.objects.get_or_create(**word1_data)
     word2_entry, _ = DictionaryEntry.objects.get_or_create(**word2_data)
 
-    return word1_entry, word2_entry
+    if not ignoreExisting:
+        existing_combination = WordCombination.objects.filter(
+            (Q(word1=word1_entry) & Q(word2=word2_entry)) |
+            (Q(word1=word2_entry) & Q(word2=word1_entry))
+        ).exists()
+
+        if existing_combination:
+            raise WordCombinationAlreadyExistsException(combination_id=existing_combination.id)
+
+    return sorted([word1_entry, word2_entry], key=lambda word: word.id)
 
 @transaction.atomic
 def _update_combination(instance, validated_data):
@@ -63,16 +72,18 @@ def _update_combination(instance, validated_data):
 
     instance.word1 = new_word1_entry
     instance.word2 = new_word2_entry
+
     try:
         instance.save()
+
         _cleanup_dictionary_entry(old_word1_entry, 'word1_entries')
         _cleanup_dictionary_entry(old_word2_entry, 'word2_entries')
     except IntegrityError:
-        raise WordCombinationExistsException()
+        raise WordCombinationIntegrityException()
 
     return instance
 
-def _create_combination(validated_data):
+def _create_combination(validated_data, ignoreExisting=False):
     """
     Create a new word combination using validated data.
 
@@ -85,12 +96,16 @@ def _create_combination(validated_data):
     Raises:
         WordCombinationExistsException: If a combination with the same words already exists.
     """
-    word1_entry, word2_entry = _get_or_create_dictionary_entry(validated_data)
+    word1_entry, word2_entry = _get_or_create_dictionary_entry(validated_data, ignoreExisting=ignoreExisting)
 
     try:
+        if ignoreExisting:
+            combination, _ = WordCombination.objects.get_or_create(word1=word1_entry, word2=word2_entry)
+            return combination
+
         return WordCombination.objects.create(word1=word1_entry, word2=word2_entry)
     except IntegrityError:
-        raise WordCombinationExistsException()
+        raise WordCombinationIntegrityException()
 
 @transaction.atomic
 def _delete_combination(instance):
@@ -115,7 +130,7 @@ def _delete_combination(instance):
         raise WordCombinationIntegrityException()
 
 class WordCombinationSerializer(serializers.ModelSerializer):
-    words = serializers.ListField(child=serializers.DictField(), max_length=2, write_only=True)
+    words = serializers.ListField(child=serializers.DictField(), min_length=2, max_length=2, write_only=True)
 
     class Meta:
         model = WordCombination

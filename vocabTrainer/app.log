@@ -1,0 +1,860 @@
+2024-11-02 21:09:02,710 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:09:02,710 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:09:02,710 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:09:02,711 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2706
+2024-11-02 21:09:02,711 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2706
+2024-11-02 21:11:56,640 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:11:56,640 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:11:56,640 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-02 21:11:56,641 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2706
+2024-11-02 21:11:56,641 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2706
+2024-11-02 23:57:17,858 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-02 23:57:17,858 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-02 23:57:17,858 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-02 23:57:17,859 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 103
+2024-11-02 23:57:17,859 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 103
+2024-11-03 00:03:55,871 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:03:55,871 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:03:55,871 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:03:55,872 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 82
+2024-11-03 00:03:55,872 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 82
+2024-11-03 00:15:48,731 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 00:15:48,731 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 00:15:48,731 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 00:15:48,732 [ERROR] django.server: "GET /api/collections/ HTTP/1.1" 500 208
+2024-11-03 00:15:48,732 [ERROR] django.server: "GET /api/collections/ HTTP/1.1" 500 208
+2024-11-03 00:17:39,429 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:17:39,429 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:17:39,429 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:17:39,430 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 85
+2024-11-03 00:17:39,430 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 85
+2024-11-03 00:18:08,878 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:18:08,878 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:18:08,878 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:18:08,879 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 85
+2024-11-03 00:18:08,879 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 85
+2024-11-03 00:33:38,152 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:33:38,152 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:33:38,152 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:33:38,153 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:33:38,153 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:34:49,007 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:34:49,007 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:34:49,007 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:34:49,008 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:34:49,008 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:38:57,974 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:38:57,974 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:38:57,974 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:38:57,974 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 103
+2024-11-03 00:38:57,974 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 103
+2024-11-03 00:41:50,240 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:41:50,240 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:41:50,240 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 00:41:50,241 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 96
+2024-11-03 00:41:50,241 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 96
+2024-11-03 00:42:27,058 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:42:27,058 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:42:27,058 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 00:42:27,059 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 116
+2024-11-03 00:42:27,059 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 116
+2024-11-03 00:43:26,148 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:26,148 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:26,148 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:26,148 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:43:26,148 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:43:35,897 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:35,897 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:35,897 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:43:35,898 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:43:35,898 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:48:11,559 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:48:11,559 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:48:11,559 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:48:11,561 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:48:11,561 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:53:46,879 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:53:46,879 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:53:46,879 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:53:46,879 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:53:46,879 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:57:25,263 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:57:25,263 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:57:25,263 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:57:25,263 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:57:25,263 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:58:03,030 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:03,030 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:03,030 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:03,031 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:58:03,031 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:58:58,204 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:58,204 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:58,204 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:58:58,205 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:58:58,205 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:04,065 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:04,065 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:04,065 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:04,066 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:04,066 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:20,552 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:20,552 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:20,552 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:20,553 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:20,553 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:39,221 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:39,221 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:39,221 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 00:59:39,222 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 00:59:39,222 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 01:00:13,565 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:13,565 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:13,565 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:13,566 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 01:00:13,566 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 406 99
+2024-11-03 01:00:56,037 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:56,037 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:56,037 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:00:56,038 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:00:56,038 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:23,269 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:23,269 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:23,269 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:23,270 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:23,270 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:31,316 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:31,316 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:31,316 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:31,317 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:31,317 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:50,454 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:50,454 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:50,454 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:04:50,455 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:04:50,455 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:07:41,987 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:07:41,987 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:07:41,987 [WARNING] django.request: Not Acceptable: /api/collections/
+2024-11-03 01:07:41,989 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:07:41,989 [WARNING] django.server: "GET /api/collections/?page_size=1 HTTP/1.1" 406 99
+2024-11-03 01:07:54,196 [ERROR] django.request: Internal Server Error: /api/collections
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/collections/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-11-03 01:07:54,196 [ERROR] django.request: Internal Server Error: /api/collections
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/collections/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-11-03 01:07:54,196 [ERROR] django.request: Internal Server Error: /api/collections
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/collections/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-11-03 01:07:54,198 [ERROR] django.server: "POST /api/collections HTTP/1.1" 500 19850
+2024-11-03 01:07:54,198 [ERROR] django.server: "POST /api/collections HTTP/1.1" 500 19850
+2024-11-03 01:08:00,302 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:08:00,302 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:08:00,302 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:08:00,303 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 103
+2024-11-03 01:08:00,303 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 103
+2024-11-03 01:08:19,944 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:08:19,944 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:08:19,944 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:08:19,945 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 82
+2024-11-03 01:08:19,945 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 82
+2024-11-03 01:10:34,826 [WARNING] django.request: Not Found: /image/4/
+2024-11-03 01:10:34,826 [WARNING] django.request: Not Found: /image/4/
+2024-11-03 01:10:34,826 [WARNING] django.request: Not Found: /image/4/
+2024-11-03 01:10:34,827 [WARNING] django.server: "GET /image/4/ HTTP/1.1" 404 2773
+2024-11-03 01:10:34,827 [WARNING] django.server: "GET /image/4/ HTTP/1.1" 404 2773
+2024-11-03 01:12:07,478 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:12:07,478 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:12:07,478 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 01:12:07,479 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 116
+2024-11-03 01:12:07,479 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 116
+2024-11-03 01:12:25,757 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:12:25,757 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:12:25,757 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:12:25,758 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 96
+2024-11-03 01:12:25,758 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 401 96
+2024-11-03 01:13:48,907 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:13:48,907 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:13:48,907 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 01:13:48,907 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 96
+2024-11-03 01:13:48,907 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 96
+2024-11-03 01:14:20,005 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 01:14:20,005 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 01:14:20,005 [ERROR] django.request: Internal Server Error: /api/collections/
+2024-11-03 01:14:20,006 [ERROR] django.server: "GET /api/collections/ HTTP/1.1" 500 151
+2024-11-03 01:14:20,006 [ERROR] django.server: "GET /api/collections/ HTTP/1.1" 500 151
+2024-11-03 01:14:43,354 [WARNING] django.request: Not Found: /media/collections/images/lidl.jpg
+2024-11-03 01:14:43,354 [WARNING] django.request: Not Found: /media/collections/images/lidl.jpg
+2024-11-03 01:14:43,354 [WARNING] django.request: Not Found: /media/collections/images/lidl.jpg
+2024-11-03 01:14:43,355 [WARNING] django.server: "GET /media/collections/images/lidl.jpg HTTP/1.1" 404 3127
+2024-11-03 01:14:43,355 [WARNING] django.server: "GET /media/collections/images/lidl.jpg HTTP/1.1" 404 3127
+2024-11-03 14:14:57,668 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:14:57,668 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:14:57,668 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:14:57,669 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 103
+2024-11-03 14:14:57,669 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 103
+2024-11-03 14:15:08,068 [WARNING] django.request: Method Not Allowed: /api/auth/login/
+2024-11-03 14:15:08,068 [WARNING] django.request: Method Not Allowed: /api/auth/login/
+2024-11-03 14:15:08,068 [WARNING] django.request: Method Not Allowed: /api/auth/login/
+2024-11-03 14:15:08,069 [WARNING] django.server: "GET /api/auth/login/ HTTP/1.1" 405 7537
+2024-11-03 14:15:08,069 [WARNING] django.server: "GET /api/auth/login/ HTTP/1.1" 405 7537
+2024-11-03 14:15:08,402 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-03 14:15:08,402 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-03 14:15:08,402 [WARNING] django.request: Not Found: /favicon.ico
+2024-11-03 14:15:08,403 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 3061
+2024-11-03 14:15:08,403 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 3061
+2024-11-03 14:20:22,107 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:22,107 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:22,107 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:22,110 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 72517
+2024-11-03 14:20:22,110 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 72517
+2024-11-03 14:20:48,144 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:48,144 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:48,144 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: secure_image_view() missing 1 required positional argument: 'request'
+2024-11-03 14:20:48,145 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 19184
+2024-11-03 14:20:48,145 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 19184
+2024-11-03 14:22:01,843 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:01,843 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:01,843 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:01,844 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg/ HTTP/1.1" 404 3109
+2024-11-03 14:22:01,844 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg/ HTTP/1.1" 404 3109
+2024-11-03 14:22:14,639 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:14,639 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:14,639 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:14,639 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:14,639 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:15,687 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:15,687 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:15,687 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:15,688 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:15,688 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:16,546 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:16,546 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:16,546 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:16,546 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:16,546 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:17,294 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:17,294 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:17,294 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:17,294 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:17,294 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:22,053 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:22,053 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:22,053 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:22,054 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:22,054 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg HTTP/1.1" 404 3108
+2024-11-03 14:22:28,073 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:28,073 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:28,073 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:28,074 [WARNING] django.server: "GET /accounts/login/ HTTP/1.1" 404 3067
+2024-11-03 14:22:28,074 [WARNING] django.server: "GET /accounts/login/ HTTP/1.1" 404 3067
+2024-11-03 14:22:30,275 [WARNING] django.request: Not Found: /accounts/login
+2024-11-03 14:22:30,275 [WARNING] django.request: Not Found: /accounts/login
+2024-11-03 14:22:30,275 [WARNING] django.request: Not Found: /accounts/login
+2024-11-03 14:22:30,276 [WARNING] django.server: "GET /accounts/login HTTP/1.1" 404 3064
+2024-11-03 14:22:30,276 [WARNING] django.server: "GET /accounts/login HTTP/1.1" 404 3064
+2024-11-03 14:22:34,417 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:34,417 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:34,417 [WARNING] django.request: Not Found: /accounts/login/
+2024-11-03 14:22:34,418 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg/ HTTP/1.1" 404 3109
+2024-11-03 14:22:34,418 [WARNING] django.server: "GET /accounts/login/?next=/images/collections/images/lidl.jpg/ HTTP/1.1" 404 3109
+2024-11-03 14:25:23,516 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:23,516 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:23,516 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:23,517 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5196
+2024-11-03 14:25:23,517 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5196
+2024-11-03 14:25:32,247 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:32,247 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:32,247 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:25:32,248 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 103
+2024-11-03 14:25:32,248 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 103
+2024-11-03 14:28:08,708 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:08,708 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:08,708 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:08,709 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5196
+2024-11-03 14:28:08,709 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5196
+2024-11-03 14:28:22,407 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:22,407 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:22,407 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:28:22,407 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 6452
+2024-11-03 14:28:22,407 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 6452
+2024-11-03 14:29:18,902 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:29:18,902 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:29:18,902 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:29:18,903 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7015
+2024-11-03 14:29:18,903 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7015
+2024-11-03 14:30:19,866 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:19,866 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:19,866 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:19,866 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 45
+2024-11-03 14:30:19,866 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 45
+2024-11-03 14:30:47,622 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:47,622 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:47,622 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+2024-11-03 14:30:47,623 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 5464
+2024-11-03 14:30:47,623 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 5464
+2024-11-03 14:31:08,816 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:08,816 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:08,816 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:08,820 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86292
+2024-11-03 14:31:08,820 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86292
+2024-11-03 14:31:19,688 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:19,688 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:19,688 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:19,691 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86178
+2024-11-03 14:31:19,691 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86178
+2024-11-03 14:31:22,563 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:22,563 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:22,563 [ERROR] django.request: Internal Server Error: /images/collections/images/lidl.jpg/
+Traceback (most recent call last):
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Eschen\Documents\Programming\vocabTrainer\venv\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'rest_framework.exceptions.APIException'>`
+2024-11-03 14:31:22,565 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86178
+2024-11-03 14:31:22,565 [ERROR] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 500 86178
+2024-11-03 14:32:07,150 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:07,150 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:07,150 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:07,152 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5382
+2024-11-03 14:32:07,152 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5382
+2024-11-03 14:32:24,768 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:24,768 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:24,768 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:24,769 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5416
+2024-11-03 14:32:24,769 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5416
+2024-11-03 14:32:53,428 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:53,428 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:53,428 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:32:53,429 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7015
+2024-11-03 14:32:53,429 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7015
+2024-11-03 14:33:21,378 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:33:21,378 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:33:21,378 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg/
+2024-11-03 14:33:21,379 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5481
+2024-11-03 14:33:21,379 [WARNING] django.server: "GET /images/collections/images/lidl.jpg/ HTTP/1.1" 401 5481
+2024-11-03 14:33:24,945 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg//
+2024-11-03 14:33:24,945 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg//
+2024-11-03 14:33:24,945 [WARNING] django.request: Unauthorized: /images/collections/images/lidl.jpg//
+2024-11-03 14:33:24,946 [WARNING] django.server: "GET /images/collections/images/lidl.jpg//?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7021
+2024-11-03 14:33:24,946 [WARNING] django.server: "GET /images/collections/images/lidl.jpg//?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7021
+2024-11-03 14:33:48,960 [WARNING] django.request: Unauthorized: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:48,960 [WARNING] django.request: Unauthorized: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:48,960 [WARNING] django.request: Unauthorized: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:48,961 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7021
+2024-11-03 14:33:48,961 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNT2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 401 7021
+2024-11-03 14:33:57,810 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:57,810 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:57,810 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:33:57,811 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 404 6964
+2024-11-03 14:33:57,811 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 404 6964
+2024-11-03 14:36:11,971 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:36:11,971 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:36:11,971 [WARNING] django.request: Not Found: /images/collections/images/liddl.jpg/
+2024-11-03 14:36:11,972 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 404 7028
+2024-11-03 14:36:11,972 [WARNING] django.server: "GET /images/collections/images/liddl.jpg/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNjQxNTE2LCJpYXQiOjE3MzA2Mzk3MTYsImp0aSI6Ijc4ZWQ4MWVjMjUxZDQyNWNiZmUwZTUyNzc0N2JiMmFjIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJtZXNjIiwiZW1haWwiOiJidXNpbmVzcy5lc2NoZW5iYWNoQGdtYWlsLmNvbSJ9.HaDQMwaLOCeAtWL5GARVKoId5FvwEerIIlxbZBp82mw HTTP/1.1" 404 7028
+2024-11-03 14:52:38,887 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:52:38,887 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:52:38,887 [WARNING] django.request: Unauthorized: /api/collections/
+2024-11-03 14:52:38,888 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 96
+2024-11-03 14:52:38,888 [WARNING] django.server: "GET /api/collections/ HTTP/1.1" 401 96
+2024-11-03 14:52:48,411 [WARNING] django.request: Method Not Allowed: /api/auth/token/refresh/
+2024-11-03 14:52:48,411 [WARNING] django.request: Method Not Allowed: /api/auth/token/refresh/
+2024-11-03 14:52:48,411 [WARNING] django.request: Method Not Allowed: /api/auth/token/refresh/
+2024-11-03 14:52:48,412 [WARNING] django.server: "GET /api/auth/token/refresh/ HTTP/1.1" 405 7425
+2024-11-03 14:52:48,412 [WARNING] django.server: "GET /api/auth/token/refresh/ HTTP/1.1" 405 7425
+2024-11-03 14:55:28,506 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:28,506 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:28,506 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:28,507 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 98
+2024-11-03 14:55:28,507 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 98
+2024-11-03 14:55:43,526 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:43,526 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:43,526 [WARNING] django.request: Bad Request: /api/collections/
+2024-11-03 14:55:43,527 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 98
+2024-11-03 14:55:43,527 [WARNING] django.server: "POST /api/collections/ HTTP/1.1" 400 98
+2024-11-03 15:13:25,793 [WARNING] django.request: Not Found: /api/collections/2/
+2024-11-03 15:13:25,793 [WARNING] django.request: Not Found: /api/collections/2/
+2024-11-03 15:13:25,793 [WARNING] django.request: Not Found: /api/collections/2/
+2024-11-03 15:13:25,794 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 404 3460
+2024-11-03 15:13:25,794 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 404 3460
+2024-11-03 15:30:30,714 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:30,714 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:30,714 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:30,715 [WARNING] django.server: "GET /api/dictionary/combinations/ HTTP/1.1" 401 96
+2024-11-03 15:30:30,715 [WARNING] django.server: "GET /api/dictionary/combinations/ HTTP/1.1" 401 96
+2024-11-03 15:30:38,220 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:38,220 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:38,220 [WARNING] django.request: Unauthorized: /api/dictionary/combinations/
+2024-11-03 15:30:38,221 [WARNING] django.server: "GET /api/dictionary/combinations/ HTTP/1.1" 401 96
+2024-11-03 15:30:38,221 [WARNING] django.server: "GET /api/dictionary/combinations/ HTTP/1.1" 401 96
+2024-11-03 15:37:16,248 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:16,248 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:16,248 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:16,248 [WARNING] django.server: "POST /api/dictionary/combinations/ HTTP/1.1" 400 179
+2024-11-03 15:37:16,248 [WARNING] django.server: "POST /api/dictionary/combinations/ HTTP/1.1" 400 179
+2024-11-03 15:37:54,092 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:54,092 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:54,092 [WARNING] django.request: Bad Request: /api/dictionary/combinations/
+2024-11-03 15:37:54,093 [WARNING] django.server: "POST /api/dictionary/combinations/ HTTP/1.1" 400 107
+2024-11-03 15:37:54,093 [WARNING] django.server: "POST /api/dictionary/combinations/ HTTP/1.1" 400 107
+2024-11-03 16:14:22,705 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:14:22,705 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:14:22,705 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:14:22,706 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 16:14:22,706 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 16:14:48,614 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:14:48,614 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:14:48,614 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:14:48,614 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:14:48,614 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:21:19,490 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:21:19,490 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:21:19,490 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:21:19,491 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:21:19,491 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:25:27,925 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:25:27,925 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:25:27,925 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:25:27,925 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:25:27,925 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:37:04,440 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:37:04,440 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:37:04,440 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:37:04,441 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:37:04,441 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 121
+2024-11-03 16:37:27,905 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:27,905 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:27,905 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:27,906 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 90
+2024-11-03 16:37:27,906 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 90
+2024-11-03 16:37:46,338 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:46,338 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:46,338 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:37:46,339 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 266
+2024-11-03 16:37:46,339 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 266
+2024-11-03 16:38:13,483 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:13,483 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:13,483 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:13,484 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 160
+2024-11-03 16:38:13,484 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 160
+2024-11-03 16:38:25,657 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:25,657 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:25,657 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:38:25,658 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 16:38:25,658 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 16:38:55,450 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:38:55,450 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:38:55,450 [WARNING] django.request: Bad Request: /api/collections/2/
+2024-11-03 16:38:55,450 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 103
+2024-11-03 16:38:55,450 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 400 103
+2024-11-03 16:42:39,843 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:42:39,843 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:42:39,843 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:42:39,844 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 16:42:39,844 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 16:55:06,262 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:55:06,262 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:55:06,262 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 16:55:06,263 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 16:55:06,263 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 16:55:31,394 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:55:31,394 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:55:31,394 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 16:55:31,394 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 73
+2024-11-03 16:55:31,394 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 73
+2024-11-03 17:33:16,591 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 17:33:16,591 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 17:33:16,591 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 17:33:16,592 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 17:33:16,592 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 17:34:42,803 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:42,803 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:42,803 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:42,804 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 85
+2024-11-03 17:34:42,804 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 85
+2024-11-03 17:34:55,425 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:55,425 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:55,425 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:34:55,426 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:34:55,426 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:00,778 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:00,778 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:00,778 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:00,779 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:00,779 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:27,073 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:27,073 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:27,073 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:27,074 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:27,074 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:49,271 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:49,271 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:49,271 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:35:49,272 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:35:49,272 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 17:37:03,145 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:03,145 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:03,145 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:03,146 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 141
+2024-11-03 17:37:03,146 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 141
+2024-11-03 17:37:15,849 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:15,849 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:15,849 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:37:15,850 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 340
+2024-11-03 17:37:15,850 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 340
+2024-11-03 17:39:37,822 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:39:37,822 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:39:37,822 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:39:37,823 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 92
+2024-11-03 17:39:37,823 [ERROR] django.server: "GET /api/collections/2/ HTTP/1.1" 500 92
+2024-11-03 17:53:22,438 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:53:22,438 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:53:22,438 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:53:22,439 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 17:53:22,439 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 17:54:36,022 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:54:36,022 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:54:36,022 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 17:54:36,022 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 17:54:36,022 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 18:20:09,835 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:20:09,835 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:20:09,835 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:20:09,836 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 18:20:09,836 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 18:20:43,043 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:20:43,043 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:20:43,043 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:20:43,044 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 75
+2024-11-03 18:20:43,044 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 75
+2024-11-03 18:23:12,206 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:23:12,206 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:23:12,206 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:23:12,207 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 18:23:12,207 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 18:45:39,984 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:45:39,984 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:45:39,984 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:45:39,986 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 18:45:39,986 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 71
+2024-11-03 18:46:07,601 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:07,601 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:07,601 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:07,602 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 18:46:07,602 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 66
+2024-11-03 18:46:21,379 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:21,379 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:21,379 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:21,380 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 75
+2024-11-03 18:46:21,380 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 75
+2024-11-03 18:46:44,681 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:44,681 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:44,681 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:46:44,682 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 83
+2024-11-03 18:46:44,682 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 83
+2024-11-03 18:47:26,089 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:47:26,089 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:47:26,089 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:47:26,090 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 83
+2024-11-03 18:47:26,090 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 83
+2024-11-03 18:48:55,589 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:48:55,589 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:48:55,589 [ERROR] django.request: Internal Server Error: /api/collections/2/
+2024-11-03 18:48:55,589 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 69
+2024-11-03 18:48:55,589 [ERROR] django.server: "POST /api/collections/2/ HTTP/1.1" 500 69
+2024-11-03 18:53:54,608 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:53:54,608 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:53:54,608 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 18:53:54,609 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 18:53:54,609 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 19:34:00,413 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 19:34:00,413 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 19:34:00,413 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 19:34:00,414 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 19:34:00,414 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 19:53:42,825 [WARNING] django.request: Conflict: /api/collections/2/
+2024-11-03 19:53:42,825 [WARNING] django.request: Conflict: /api/collections/2/
+2024-11-03 19:53:42,825 [WARNING] django.request: Conflict: /api/collections/2/
+2024-11-03 19:53:42,826 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 409 128
+2024-11-03 19:53:42,826 [WARNING] django.server: "POST /api/collections/2/ HTTP/1.1" 409 128
+2024-11-03 20:14:49,781 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 20:14:49,781 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 20:14:49,781 [WARNING] django.request: Unauthorized: /api/collections/2/
+2024-11-03 20:14:49,782 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96
+2024-11-03 20:14:49,782 [WARNING] django.server: "GET /api/collections/2/ HTTP/1.1" 401 96

@@ -2,13 +2,13 @@ from django.db import IntegrityError, transaction
 from django.db.models import Q
 from rest_framework import serializers
 
-from .exceptions import WordCombinationFormatException, WordCombinationIntegrityException, WordCombinationAlreadyExistsException
+from .exceptions import WordCombinationFormatException, WordCombinationAlreadyExistsException
 from .models import DictionaryEntry, WordCombination
 
 class DictionaryEntrySerializer(serializers.ModelSerializer):
     class Meta:
         model = DictionaryEntry
-        fields = ['id', 'word']
+        fields = ['id', 'word', 'language']
 
 
 def _cleanup_dictionary_entry(old_entry, related_name):
@@ -19,7 +19,7 @@ def _cleanup_dictionary_entry(old_entry, related_name):
         old_entry.delete()
 
 
-def _get_or_create_dictionary_entry(validated_data, ignoreExisting=False):
+def _get_or_create_dictionary_entry(validated_data, ignore_existing=False):
     """
     Get or create dictionary entries for the words provided in validated data.
 
@@ -37,25 +37,25 @@ def _get_or_create_dictionary_entry(validated_data, ignoreExisting=False):
     if len(words_data) != 2:
         raise WordCombinationFormatException()
 
-    word1_data = words_data[0]
-    word2_data = words_data[1]
+    word_entries = []
+    for key, value in words_data.items():
+        word_entry, _ = DictionaryEntry.objects.get_or_create(language=key, word=value)
+        word_entries.append(word_entry)
 
-    word1_entry, _ = DictionaryEntry.objects.get_or_create(**word1_data)
-    word2_entry, _ = DictionaryEntry.objects.get_or_create(**word2_data)
 
-    if not ignoreExisting:
+    if not ignore_existing:
         existing_combination = WordCombination.objects.filter(
-            (Q(word1=word1_entry) & Q(word2=word2_entry)) |
-            (Q(word1=word2_entry) & Q(word2=word1_entry))
-        ).exists()
+            (Q(word1=word_entries[0]) & Q(word2=word_entries[1])) |
+            (Q(word1=word_entries[1]) & Q(word2=word_entries[0]))
+        ).first()
 
         if existing_combination:
             raise WordCombinationAlreadyExistsException(combination_id=existing_combination.id)
 
-    return sorted([word1_entry, word2_entry], key=lambda word: word.id)
+    return sorted([word_entries[0], word_entries[1]], key=lambda word: word.id)
 
 @transaction.atomic
-def _update_combination(instance, validated_data):
+def _update_combination(instance, validated_data, ignore_existing=False):
     """
     Update an existing word combination with new entries or link existing ones.
 
@@ -68,7 +68,7 @@ def _update_combination(instance, validated_data):
     """
     old_word1_entry = instance.word1
     old_word2_entry = instance.word2
-    new_word1_entry, new_word2_entry = _get_or_create_dictionary_entry(validated_data)
+    new_word1_entry, new_word2_entry = _get_or_create_dictionary_entry(validated_data, ignore_existing)
 
     instance.word1 = new_word1_entry
     instance.word2 = new_word2_entry
@@ -78,12 +78,13 @@ def _update_combination(instance, validated_data):
 
         _cleanup_dictionary_entry(old_word1_entry, 'word1_entries')
         _cleanup_dictionary_entry(old_word2_entry, 'word2_entries')
-    except IntegrityError:
-        raise WordCombinationIntegrityException()
+    except IntegrityError as e:
+        raise WordCombinationAlreadyExistsException()
 
     return instance
 
-def _create_combination(validated_data, ignoreExisting=False):
+@transaction.atomic
+def _create_combination(validated_data, ignore_existing=False):
     """
     Create a new word combination using validated data.
 
@@ -96,16 +97,16 @@ def _create_combination(validated_data, ignoreExisting=False):
     Raises:
         WordCombinationExistsException: If a combination with the same words already exists.
     """
-    word1_entry, word2_entry = _get_or_create_dictionary_entry(validated_data, ignoreExisting=ignoreExisting)
+    word1_entry, word2_entry = _get_or_create_dictionary_entry(validated_data, ignore_existing=ignore_existing)
 
     try:
-        if ignoreExisting:
+        if ignore_existing:
             combination, _ = WordCombination.objects.get_or_create(word1=word1_entry, word2=word2_entry)
             return combination
 
         return WordCombination.objects.create(word1=word1_entry, word2=word2_entry)
     except IntegrityError:
-        raise WordCombinationIntegrityException()
+        raise WordCombinationAlreadyExistsException()
 
 @transaction.atomic
 def _delete_combination(instance):
@@ -127,10 +128,33 @@ def _delete_combination(instance):
         _cleanup_dictionary_entry(word1_entry, 'word1_entries')
         _cleanup_dictionary_entry(word2_entry, 'word2_entries')
     except IntegrityError:
-        raise WordCombinationIntegrityException()
+        raise WordCombinationAlreadyExistsException()
+
+def get_representation(instance):
+    """
+    Helper function to customize the representation of a word combination
+    using languages as keys.
+
+    Args:
+        instance (WordCombination): The word combination instance to represent.
+
+    Returns:
+        dict: The serialized representation with languages as keys.
+    """
+    word1_data = DictionaryEntrySerializer(instance.word1).data
+    word2_data = DictionaryEntrySerializer(instance.word2).data
+
+    language_key_1 = word1_data["language"]
+    language_key_2 = word2_data["language"]
+
+    return {
+        "id": instance.id,
+        language_key_1: word1_data["word"],
+        language_key_2: word2_data["word"]
+    }
 
 class WordCombinationSerializer(serializers.ModelSerializer):
-    words = serializers.ListField(child=serializers.DictField(), min_length=2, max_length=2, write_only=True)
+    words = serializers.DictField(child=serializers.CharField(), write_only=True)
 
     class Meta:
         model = WordCombination
@@ -140,24 +164,10 @@ class WordCombinationSerializer(serializers.ModelSerializer):
         return _create_combination(validated_data)
 
     def to_representation(self, instance):
-        """
-        Customize the representation of the word combination to include serialized word entries.
-
-        Args:
-            instance (WordCombination): The word combination instance to represent.
-
-        Returns:
-            dict: The serialized representation including detailed word information.
-        """
-        representation = super().to_representation(instance)
-        representation['words'] = [
-            DictionaryEntrySerializer(instance.word1).data,
-            DictionaryEntrySerializer(instance.word2).data
-        ]
-        return representation
+        return get_representation(instance)
 
 class WordCombinationDetailSerializer(serializers.ModelSerializer):
-    words = serializers.ListField(child=serializers.DictField(), max_length=2, write_only=True)
+    words = serializers.DictField(child=serializers.CharField(), write_only=True)
 
     class Meta:
         model = WordCombination
@@ -170,18 +180,4 @@ class WordCombinationDetailSerializer(serializers.ModelSerializer):
         return _delete_combination(instance)
 
     def to_representation(self, instance):
-        """
-        Customize the representation of the word combination to include serialized word entries.
-
-        Args:
-            instance (WordCombination): The word combination instance to represent.
-
-        Returns:
-            dict: The serialized representation including detailed word information.
-        """
-        representation = super().to_representation(instance)
-        representation['words'] = [
-            DictionaryEntrySerializer(instance.word1).data,
-            DictionaryEntrySerializer(instance.word2).data
-        ]
-        return representation
+        return get_representation(instance)

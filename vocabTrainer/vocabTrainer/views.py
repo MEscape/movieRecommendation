@@ -12,6 +12,12 @@ class SecureImageView(APIView):
     permission_classes = [permissions.AllowAny]
 
     def get(self, request, image_path):
+        print(f'Image Access: {request.user}')
+
+        if request.user.is_staff:
+            return self.serve_image(image_path)
+
+        # JWT token verification for non-admin requests
         token_param = request.GET.get("token") or request.headers.get("Authorization")
         if token_param and token_param.startswith("Bearer "):
             token_param = token_param.split(" ")[1]
@@ -28,9 +34,12 @@ class SecureImageView(APIView):
 
         try:
             AccessToken(token_param)
-        except Exception as e:
+        except Exception:
             raise AuthenticationFailed("Invalid or expired token")
 
+        return self.serve_image(image_path)
+
+    def serve_image(self, image_path):
         full_image_path = os.path.join(settings.MEDIA_ROOT, image_path)
 
         if not os.path.exists(full_image_path):

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Combination Table</title>
+
+    <style>
+        #word-combination-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #word-combination-table th, #word-combination-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .actions {
+            text-align: center;
+        }
+
+        .edit-row, .delete-row {
+            padding: 5px 10px;
+            margin: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .edit-row:hover, .delete-row:hover {
+            background-color: #0056b3;
+        }
+
+        .add-button {
+            padding: 10px 20px;
+            margin: 0 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .add-button:hover {
+            background-color: #218838;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <table id="word-combination-table">
+        <thead>
+        <tr>
+            <th>{{ word1_language_full }}</th>
+            <th>{{ word2_language_full }}</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in value %}
+        <tr id="row-{{ forloop.counter0 }}">
+            <td>{{ row.word1_word }}</td>
+            <td>{{ row.word2_word }}</td>
+            <td class="actions">
+                <button type="button" class="edit-row" data-row-id="{{ forloop.counter0 }}">Edit</button>
+                <button type="button" class="delete-row" data-row-id="{{ forloop.counter0 }}">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div id="add-row-container">
+        <button type="button" id="add-row" class="add-button">Add Row</button>
+    </div>
+
+    <script>
+        document.getElementById('add-row').addEventListener('click', function() {
+            const table = document.getElementById('word-combination-table').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+            const word1Cell = newRow.insertCell(0);
+            const word2Cell = newRow.insertCell(1);
+            const actionsCell = newRow.insertCell(2);
+
+            word1Cell.innerHTML = '<input type="text" name="word1_word" placeholder="Word 1" class="input-field">';
+            word2Cell.innerHTML = '<input type="text" name="word2_word" placeholder="Word 2" class="input-field">';
+            actionsCell.innerHTML = `
+                <button type="button" class="edit-row">Edit</button>
+                <button type="button" class="delete-row">Delete</button>
+            `;
+
+            newRow.querySelector('.delete-row').addEventListener('click', function() {
+                table.deleteRow(newRow.rowIndex);
+            });
+
+            newRow.querySelector('.edit-row').addEventListener('click', function() {
+                word1Cell.innerHTML = `<input type="text" name="word1_word" value="${word1Cell.innerText}" class="input-field">`;
+                word2Cell.innerHTML = `<input type="text" name="word2_word" value="${word2Cell.innerText}" class="input-field">`;
+            });
+        });
+
+        // Bind delete buttons for existing rows
+        document.querySelectorAll('.delete-row').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const rowId = this.getAttribute('data-row-id');
+                const row = document.getElementById('row-' + rowId);
+                row.remove();
+            });
+        });
+
+        // Bind edit buttons for existing rows
+        document.querySelectorAll('.edit-row').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const rowId = this.getAttribute('data-row-id');
+                const row = document.getElementById('row-' + rowId);
+                const word1Cell = row.cells[0];
+                const word2Cell = row.cells[1];
+                word1Cell.innerHTML = `<input type="text" name="word1_word" value="${word1Cell.innerText}" class="input-field">`;
+                word2Cell.innerHTML = `<input type="text" name="word2_word" value="${word2Cell.innerText}" class="input-field">`;
+            });
+        });
+    </script>
+</body>
+</html>

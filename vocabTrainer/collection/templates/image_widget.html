@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .clear-checkbox {
+            display: flex;
+            column-gap: 4px;
+            align-items: center;
+            height: 20px;
+        }
+        .file-upload {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-upload-wrapper">
+        <div class="file-upload">
+            <div class="image-preview">
+                {{ preview_html }}
+            </div>
+            <input type="file" name="{{ name }}" accept="image/jpeg,image/png" id="{{ name }}" onchange="previewImage(event)">
+            <div class="clear-checkbox">
+                {{ clear_checkbox_html }}
+            </div>
+        </div>
+    </div>
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const previewContainer = document.querySelector('.image-preview');
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    const imageUrl = e.target.result;
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.id = 'image-preview';
+                    img.width = 200;
+                    img.alt = 'Current Image';
+
+                    previewContainer.innerHTML = '';
+                    previewContainer.appendChild(img);
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>

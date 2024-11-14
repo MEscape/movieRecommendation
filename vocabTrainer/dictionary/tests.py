@@ -5,7 +5,6 @@ from rest_framework.test import APIClient, APITestCase
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import AccessToken
 
-from .exceptions import WordCombinationExistsException, WordCombinationFormatException, WordCombinationNotFoundException
 from .models import DictionaryEntry, WordCombination
 
 User = get_user_model()
@@ -23,6 +22,7 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
         self.word_entry4 = DictionaryEntry.objects.create(word='mundo', language='es')
 
         WordCombination.objects.create(word1=self.word_entry2, word2=self.word_entry3)
+
         self.word_combination2 = WordCombination.objects.create(word1=self.word_entry3, word2=self.word_entry4)
         self.word_combination = WordCombination.objects.create(word1=self.word_entry1, word2=self.word_entry3)
 
@@ -52,10 +52,10 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
 
     def test_create_word_combination_with_existing_entries(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'},
-                {'word': 'world', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello',
+                'de': 'world'
+            },
         }
         response = self.client.post(reverse('word_combination'), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -63,46 +63,46 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
 
     def test_create_word_combination_with_one_existing_and_one_new_entry(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'},
-                {'word': 'newword', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello',
+                'de': 'newword'
+            },
         }
         response = self.client.post(reverse('word_combination'), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(WordCombination.objects.count(), 4)
-        self.assertTrue(DictionaryEntry.objects.filter(word='newword', language='en').exists())
+        self.assertTrue(DictionaryEntry.objects.filter(word='newword', language='de').exists())
 
     def test_create_word_combination_with_both_new_entries(self):
         data = {
-            'words': [
-                {'word': 'newword1', 'language': 'en'},
-                {'word': 'newword2', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'newword1',
+                'de': 'newword2'
+            }
         }
         response = self.client.post(reverse('word_combination'), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(WordCombination.objects.count(), 4)
         self.assertTrue(DictionaryEntry.objects.filter(word='newword1', language='en').exists())
-        self.assertTrue(DictionaryEntry.objects.filter(word='newword2', language='en').exists())
+        self.assertTrue(DictionaryEntry.objects.filter(word='newword2', language='de').exists())
 
     def test_create_duplicate_word_combination(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'},
-                {'word': 'world', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello',
+                'de': 'world'
+            },
         }
 
         self.client.post(reverse('word_combination'), data, format='json')
         response = self.client.post(reverse('word_combination'), data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.status_code, status.HTTP_409_CONFLICT)
 
     def test_create_combination_with_invalid_format(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello'
+            }
         }
         response = self.client.post(reverse('word_combination'), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
@@ -142,10 +142,10 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
 
     def test_update_combination_new_entries(self):
         data = {
-            'words': [
-                {'word': 'goodbye', 'language': 'en'},
-                {'word': 'earth', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'goodbye',
+                'de': 'earth'
+            },
         }
         response = self.client.put(reverse('word_combination_detail', args=[self.word_combination.id]), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -158,10 +158,10 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
 
     def test_update_combination_link_existing_entries(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'},
-                {'word': 'earth', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello',
+                'de': 'earth'
+            }
         }
         response = self.client.put(reverse('word_combination_detail', args=[self.word_combination.id]), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -174,10 +174,10 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
 
     def test_update_combination_link_existing_entries_delete(self):
         data = {
-            'words': [
-                {'word': 'hola', 'language': 'sp'},
-                {'word': 'earth', 'language': 'en'}
-            ]
+            'words': {
+                'sp': 'hola',
+                'en': 'earth'
+            },
         }
         response = self.client.put(reverse('word_combination_detail', args=[self.word_combination2.id]), data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -189,23 +189,23 @@ class DictionaryAPIEndpointsTestCase(APITestCase):
         self.assertEqual(DictionaryEntry.objects.filter(word='mundo').count(), 0)
 
     def test_update_combination_existing_combination_conflict(self):
-        WordCombination.objects.create(word1=self.word_entry1, word2=self.word_entry2)
+        WordCombination.objects.create(word1=self.word_entry1, word2=self.word_entry4)
 
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'},
-                {'word': 'world', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello',
+                'es': 'mundo'
+            },
         }
 
         response = self.client.put(reverse('word_combination_detail', args=[self.word_combination.id]), data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.status_code, status.HTTP_409_CONFLICT)
 
     def test_update_combination_invalid_format(self):
         data = {
-            'words': [
-                {'word': 'hello', 'language': 'en'}
-            ]
+            'words': {
+                'en': 'hello'
+            }
         }
 
         response = self.client.put(reverse('word_combination_detail', args=[self.word_combination.id]), data, format='json')

@@ -82,10 +82,10 @@ class WordCombinationView(generics.ListCreateAPIView):
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        dictionary_combination = serializer.save()
+        serializer.save()
 
         logger.info('Creating a new word combination')
-        return Response(self.get_serializer(dictionary_combination).data, status=status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 class WordCombinationDetailView(generics.DestroyAPIView):
     serializer_class = WordCombinationDetailSerializer
@@ -94,7 +94,7 @@ class WordCombinationDetailView(generics.DestroyAPIView):
     @swagger_auto_schema(
         responses={
             status.HTTP_200_OK: WordCombinationDetailSerializer,
-            status.HTTP_400_BAD_REQUEST: 'Word combination exists',
+            status.HTTP_400_BAD_REQUEST: 'Word combination exists or due to wrong formatting',
             status.HTTP_404_NOT_FOUND: 'Word combination not found'
         },
         operation_summary='Update a word combination',
@@ -105,10 +105,10 @@ class WordCombinationDetailView(generics.DestroyAPIView):
 
         serializer = self.get_serializer(word_combination, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
-        updated_combination = serializer.save()
+        serializer.save()
 
         logger.info(f'Updating word combination with id {combination_id}')
-        return Response(self.get_serializer(updated_combination).data, status=status.HTTP_200_OK)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     @swagger_auto_schema(
         responses={

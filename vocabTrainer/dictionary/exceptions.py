@@ -29,12 +29,3 @@ class WordCombinationNotFoundException(APIException):
         if detail is None:
             detail = "Die Wort-Kombination wurde nicht gefunden."
         super().__init__(detail=detail)
-
-class WordCombinationIntegrityException(APIException):
-    status_code = 409
-    default_code = "word_combination_integrity_error"
-
-    def __init__(self, detail=None):
-        if detail is None:
-            detail = "Ein Integritätsfehler ist aufgetreten."
-        super().__init__(detail=detail)

@@ -10,6 +10,15 @@ class CollectionNotFoundException(APIException):
             detail = "Die Sammlung wurde nicht gefunden."
         super().__init__(detail=detail)
 
+class WordCombinationOfCollectionNotFoundException(APIException):
+    status_code = 404
+    default_code = "colection_combination_not_found"
+
+    def __init__(self, detail=None):
+        if detail is None:
+            detail = "Die Wort Kombination der Sammlung wurde nicht gefunden."
+        super().__init__(detail=detail)
+
 class WordCombinationAlreadyExistsException(APIException):
     status_code = 409
     default_detail = "This word combination already exists in the collection."
